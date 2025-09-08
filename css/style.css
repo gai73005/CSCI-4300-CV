@@ -1,0 +1,190 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+/****************   Nav Section **********************/
+nav {
+	background-color: rgb(186, 12, 47);
+  color: white;
+  font-family: Lato;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/***********************  Footer Section   **************************/
+footer {
+	background-color: rgb(186, 12, 47);
+  color: white;
+  font-family: Lato;
+  display: flex;
+  justify-content: center;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/*********** Splash Page ************************/
+header {
+  font-family: Lato;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header h1 {
+  font-family: Lato;
+  color: rgb(85, 79, 71);
+}
+
+header img {
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+.address {
+  font-family: Lato;
+  font-size: large;
+  color: rgb(85, 79, 71);
+}
+
+.tagline {
+  font-family: Lato;
+  font-size: large;
+  color: rgb(85, 79, 71);
+}
+
+/************* Sections ********************/
+
+section h3 {
+  font-family: Lato;
+  color: rgb(85, 79, 71);
+  text-align: center;
+}
+
+section dl {
+  font-family: Lato;
+  color: rgb(85, 79, 71);
+  display: grid;
+  grid-template-columns: auto auto;
+  width: fit-content;
+  margin: 0 auto;
+  gap: 10px;
+}
+
+section dd {
+  text-align: right;
+}
+
+section ul {
+  font-family: Lato;
+  color: rgb(85, 79, 71);
+  text-align: center;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0;
+}
+
+section a {
+  color: rgb(186, 12, 47);
+  text-decoration: none;
+}
+
+section a:hover {
+  text-decoration: underline;
+}
+
+/**************   Projects   *****************/
+.three-col {
+	display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  margin: auto;
+  gap: 30px;
+}
+
+.card img {
+  width: 100%;
+  max-height: 150px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.card ul {
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/**************   Responsiveness   *****************/
+@media (max-width: 680px) {
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .three-col {
+      grid-template-columns: 1fr;
+    }
+
+    header {
+      text-align: center;
+    }
+}
+
+/**************   Contact Page   *****************/
+.one-col {
+  font-family: Lato;
+  color: rgb(85, 79, 71);
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 10px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px;
+}
